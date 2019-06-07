@@ -1,0 +1,41 @@
+.form-container {
+  display: flex;
+  flex-flow: row wrap;
+  flex-basis: content;
+  justify-content: space-between;
+  .form-input {
+    margin: 0.5%;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .form-container {
+    flex-flow: column;
+    .form-input {
+      width: 100%;
+    }
+  }
+}
+
+.color-picker {
+  position: absolute;
+  z-index: 1000;
+  right: 0;
+  bottom: -10%;
+}
+
+.color-box {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  div {
+    flex: 1 1;
+    height: 100%;
+    &:hover {
+      filter: blur(2px);
+      cursor: pointer;
+    }
+  }
+}

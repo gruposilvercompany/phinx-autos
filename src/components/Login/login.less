@@ -1,0 +1,23 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.login-card {
+  width: 50%;
+}
+
+.card-content {
+  display: flex;
+  flex-flow: column;
+  .ant-input-group-wrapper {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .login-card {
+    width: 100%;
+  }
+}
